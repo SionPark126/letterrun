@@ -2,23 +2,17 @@
  
  letter Run is a 2D platformer game developed using Phaser.js and Electron. 
  
- ## PLAY GAME
+ ## Play Game
  https://forche.itch.io/letter-run-online
  
- ## DOWNLOAD GAME HERE
+ ## Download game
 In order to play the game as a desktop application, go to the link below, extract the zipped file.
 https://forche.itch.io/letter-run
  
- ## ASSETS
+ ## Assets
  https://bayat.itch.io/platform-game-assets
 
-## COMMIT MESSAGE FORMAT
-
-Commit Message should be informative for what is changed/removed/added. Example: “Added character select screen functionality” or “Changed settings page instructions” 
-
-
-
-## HOW TO PACKAGE APP FOR DISTRIBUTION
+## Packaging the project as a desktop application
 
 * Make sure to install the electron-packager using npm install command.
 ~~~
