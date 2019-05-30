@@ -1,27 +1,16 @@
-﻿## PLAY GAME
+﻿# About
+ 
+ letter Run is a 2D platformer game developed using Phaser.js and Electron. 
+ 
+ ## PLAY GAME
  https://forche.itch.io/letter-run-online
  
  ## DOWNLOAD GAME HERE
+In order to play the game as a desktop application, go to the link below, extract the zipped file.
 https://forche.itch.io/letter-run
  
  ## ASSETS
  https://bayat.itch.io/platform-game-assets
- 
- ## WORKFLOW
-
-Start with the master branch.
-
-Create a new branch – Do this for each new task/feature, Branch names should reflect the task/feature that is being developed.
-
-Update, add, commit, and push changes- Make sure to push changes when one step is done, this will help us to keep track of our
-                                      changes and find a way to recover if something goes wrong. 
-                                      
-Push feature branch to remote – Feature branch is updated in the central repository for other team members to view changes.
-
-Resolve feedback – Have someone else review your code before merging.
-
-Merge your pull request – Check for any conflicts and add the code to the master branch.
-
 
 ## COMMIT MESSAGE FORMAT
 
