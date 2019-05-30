@@ -1,0 +1,93 @@
+button {
+  width: 200px;
+  height: 75px;
+  font-size: 24px;
+  text-align: center;
+  /*  box-shadow: 0px 10px 14px -7px #276873;*/
+  border-radius: 8px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #F1FAEE;
+  font-family: Impact;
+  text-align: center;
+  padding: 13px 32px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #F1FAEE;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../assets/background.png");
+  /*background-color: #A8DADC;*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header {
+  color: #E63946;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-style: oblique;
+  font-size: 120px;
+  padding-top: 0.67em;
+  /*text-shadow: 0px 10px 0px #276873;*/
+}
+
+.play-button {
+  background-color: #E63946;
+}
+
+.play-button:hover {
+  color: #E63946;
+}
+
+.settings-button {
+  background-color: #E63946;
+}
+
+.settings-button:hover {
+  color: #E63946;
+}
+
+.play-link {
+  grid-area: left;
+}
+
+.settings-link {
+  grid-area: main;
+}
+
+.exit-button {
+  grid-area: right;
+  background-color: #E63946;
+}
+
+.exit-button:hover {
+  color: #E63946;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'left main right';
+  grid-gap: 35px;
+  padding: 50px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

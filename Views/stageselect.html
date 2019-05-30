@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>
+  Letter Run
+</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="stageselect.css">
+</head>
+
+<body>
+  <div class="heading">Select Stage</div>
+  <a href="characterselect.html" class="back-link">
+    <button class="back">&laquo;</button>
+  </a>
+  <div class="grid-container">
+    <div class="stage-one">
+      <form action="stage1.html" method="get">
+        <button id="stage1" type="submit" class="stage-unlocked-button stage-button">Stage 1</button>
+      </form>
+    </div>
+    <div class="stage-two">
+      <form action="stage2.html" method="get">
+        <button disabled id="stage2" type="submit" class="stage-unlocked-button stage-button">Stage 2</button>
+      </form>
+    </div>
+    <div class="stage-three">
+      <form action="stage3.html" method="get">
+        <button disabled id="stage3" type="submit" class="stage-unlocked-button stage-button">Stage 3</button>
+      </form>
+    </div>
+    <div class="stage-four">
+      <form action="stage4.html" method="get">
+        <button disabled id="stage4" type="submit" class="stage-unlocked-button stage-button">Stage 4</button>
+      </form>
+    </div>
+    <div class="stage-five">
+      <form action="stage5.html" method="get">
+        <button disabled id="stage5" type="submit" class="stage-unlocked-button stage-button">Stage 5</button>
+      </form>
+    </div>
+    <div class="stage-six">
+      <form action="stage6.html" method="get">
+        <button disabled id="stage6" type="submit" class="stage-unlocked-button stage-button">Stage 6</button>
+      </form>
+    </div>
+    <div class="stage-seven">
+      <form action="stage7.html" method="get">
+        <button disabled id="stage7" type="submit" class="stage-unlocked-button stage-button">Stage 7</button>
+      </form>
+    </div>
+    <div class="stage-eight">
+      <form action="stage8.html" method="get">
+        <button disabled id="stage8" type="submit" class="stage-unlocked-button stage-button">Stage 8</button>
+      </form>
+    </div>
+    <div class="stage-nine">
+      <form action="stage9.html" method="get">
+        <button disabled id="stage9" type="submit" class="stage-unlocked-button stage-button">Stage 9</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var status2 = localStorage.getItem("stage2");
+      var status3 = localStorage.getItem("stage3");
+      var status4 = localStorage.getItem("stage4");
+      var status5 = localStorage.getItem("stage5");
+      var status6 = localStorage.getItem("stage6");
+      var status7 = localStorage.getItem("stage7");
+      var status8 = localStorage.getItem("stage8");
+      var status9 = localStorage.getItem("stage9");
+
+      var stage2 = document.getElementById('stage2');
+      var stage3 = document.getElementById('stage3');
+      var stage4 = document.getElementById('stage4');
+      var stage5 = document.getElementById('stage5');
+      var stage6 = document.getElementById('stage6');
+      var stage7 = document.getElementById('stage7');
+      var stage8 = document.getElementById('stage8');
+      var stage9 = document.getElementById('stage9');
+
+      if (status2 === "unlocked") {
+        stage2.disabled = false;
+      }
+      if (status3 === "unlocked") {
+        stage3.disabled = false;
+      }
+      if (status4 === "unlocked") {
+        stage4.disabled = false;
+      }
+      if (status5 === "unlocked") {
+        stage5.disabled = false;
+      }
+      if (status6 === "unlocked") {
+        stage6.disabled = false;
+      }
+      if (status7 === "unlocked") {
+        stage7.disabled = false;
+      }
+      if (status8 === "unlocked") {
+        stage8.disabled = false;
+      }
+      if (status9 === "unlocked") {
+        stage9.disabled = false;
+      }
+    });
+  </script>
+</body>
+
+</html>

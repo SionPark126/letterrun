@@ -1,0 +1,21 @@
+{
+  "name": "LetterRun",
+  "version": "1.0.0",
+  "description": "A platfomer game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Forchec/swproject/",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Forchec",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.1.8"
+  },
+  "dependencies": {
+    "phaser": "^3.16.1"
+  }
+}

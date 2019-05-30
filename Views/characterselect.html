@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>
+  Letter Run
+</title>
+
+<head>
+  <script>
+    if (typeof module === 'object') {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+  <script src="../libraries/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="characterselect.css">
+
+</head>
+
+<body>
+  <div class="heading">Choose Your Character</div>
+  <a href="menu.html" class="back-link">
+    <button class="back">&laquo;</button>
+  </a>
+  <div class="grid-container">
+    <form action="stageselect.html" method="get">
+      <input type="hidden" name="character" value="red" />
+      <button type="submit" class="character-one"></button>
+    </form>
+    <form action="stageselect.html" method="get">
+      <input type="hidden" name="character" value="blue" />
+      <button type="submit" class="character-two"></button>
+    </form>
+    <form action="stageselect.html" method="get">
+      <input type="hidden" name="character" value="grey" />
+      <button type="submit" class="character-three"></button>
+    </form>
+
+    <div class="text-one">Red</div>
+    <div class="text-two">Freeze</div>
+    <div class="text-three">Ghost</div>
+
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("button").on("click", function() {
+        var v = $(this).prev("input").val();
+        localStorage.setItem("color", v);
+        console.log(v)
+      });
+    });
+    // function sendData(){
+    //   var input = $(this).find("input").val();
+    //   localStorage.setItem("color", input);
+    //   console.log($(this).find("input").val())
+    // }
+  </script>
+
+</body>
+
+
+
+</html>

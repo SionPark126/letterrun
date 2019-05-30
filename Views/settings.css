@@ -1,0 +1,120 @@
+body {
+  background-image: url("../assets/background.png");
+  font-family: Arial;
+  color: #505050;
+  overflow: hidden;
+}
+
+.bodytext {
+  font-family: Arial;
+}
+
+.back-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.back {
+  width: 50px;
+  font-size: 32px;
+  height: 50px;
+  border-radius: 12px;
+  font-family: Arial;
+  font-weight: bolder;
+  background-color: #E63946;
+  border: none;
+  cursor: pointer;
+  color: #F1FAEE;
+}
+
+.back:hover {
+  background-color: #F1FAEE;
+  color: #E63946;
+}
+
+.item1 {
+  grid-area: header;
+  font-size: 48px;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-style: oblique;
+}
+
+.item2 {
+  grid-area: left;
+  font-size: 24px;
+}
+
+.item3 {
+  grid-area: right;
+}
+
+.item4 {
+  grid-area: key;
+  font-size: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'left left left'
+    'left left left'
+    'left left left';
+  grid-gap: 10px;
+  padding: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.grid-container>div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slidecontainer {
+  text-align: center;
+  width: 100%;
+}
+
+.volumesettings {
+  font-size: 24px;
+}
+
+.value {
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  font-family: Arial;
+  color: #505050;
+  text-align: center;
+  font-size: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #505050;
+  cursor: pointer;
+}

@@ -1,0 +1,127 @@
+button {
+  width: 175px;
+  height: 225px;
+  cursor: pointer;
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url("../assets/background.png");
+  color: #505050;
+}
+
+.heading {
+  padding-top: 25px;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-style: oblique;
+  font-size: 48px;
+}
+
+.character-one {
+  background: url(../assets/character1.png) no-repeat;
+  grid-area: top-left;
+  background-position: center;
+}
+
+.character-one:hover {
+  transition-duration: 0.4s;
+  background-color: #F1FAEE;
+}
+
+.character-two {
+  background: url(../assets/character2.png) no-repeat;
+  grid-area: top-main;
+  background-position: center;
+}
+
+.character-two:hover {
+  transition-duration: 0.4s;
+  background-color: #F1FAEE;
+}
+
+.character-three {
+  background: url(../assets/character3.png) no-repeat;
+  grid-area: top-right;
+  background-position: center;
+}
+
+.character-three:hover {
+  transition-duration: 0.4s;
+  background-color: #F1FAEE;
+}
+
+.text-one {
+  grid-area: bottom-left;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 24px;
+}
+
+.text-two {
+  grid-area: bottom-main;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 24px;
+}
+
+.text-three {
+  grid-area: bottom-right;
+  font-family: Impact;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 24px;
+}
+
+.back-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.back {
+  width: 50px;
+  font-size: 32px;
+  height: 50px;
+  border-radius: 12px;
+  font-family: Arial;
+  font-weight: bolder;
+  background-color: #E63946;
+  border: none;
+  color: #F1FAEE;
+}
+
+.back:hover {
+  background-color: #F1FAEE;
+  color: #E63946;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'top-left top-main top-right'
+    'bottom-left bottom-main bottom-right';
+  grid-gap: 30px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-container>div {
+  text-align: center;
+  font-size: 32px;
+}
